@@ -5,7 +5,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "start:prod": "npm run build && node build/index.js",
-    "start:dev": "cross-env NODE_ENV=development nodemon src/index.ts --watch"
+    "start:dev": "cross-env NODE_ENV=development nodemon src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/vsoika/crud-api-node-js#readme",
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "@types/uuid": "^9.0.8",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "webpack": "^5.90.1",
@@ -30,6 +31,7 @@
     "nodemon": "^3.0.3",
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
+    "uuid": "^9.0.1",
     "webpack-node-externals": "^3.0.0"
   }
 }

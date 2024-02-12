@@ -1,7 +1,7 @@
 import { UUID } from "node:crypto";
 
-export type USER = {
-    id: string | UUID,
+export type TUser = {
+    id: UUID,
     username: string,
     age: number,
     hobbies: string[]
